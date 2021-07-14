@@ -1,14 +1,8 @@
 ﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Configuration;
-using System.Data;
-using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using TopSecretLibrary;
 
@@ -53,8 +47,7 @@ namespace TopSecret
                         if (posSpaceship != null){
                             string message = objTS.GetMessage(listSat[0].message, listSat[1].message, listSat[2].message);
 
-                            if (message != "")
-                            {
+                            if (message != ""){
                                 txtOut.Text = "Información de los satelites:\r\n\r\n";
                                 txtOut.Text += "Nombre: " + listSat[0].name + "\r\n";
                                 txtOut.Text += "Distancia: " + listSat[0].distance + "\r\n\r\n";
